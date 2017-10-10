@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>后台管理</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href=''>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Cache-Control" content="no-store"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="0"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!--IOS设备上禁止将数字识别为可点击的tel link-->
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href='static/css/common.css'>
+    <link rel="stylesheet" type="text/css" href='static/css/base.css'>
+    <!--[if lt IE 9]>
+            <script src="/static/_public/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar">
+	<div class="header-logo"></div>
+</nav>
+<div class="main-menus no-select" id="mainMenus">
+	<div class="main-menus-bg"></div>
+	<div class="menu-controll" id="menuControll"><span class="iconfont icon-tubiaozhizuomoban"></span></div>
+	<div class="menu-item-1 has-collapse" data-click="collapse" data-target="#menu1" data-parent="#mainMenus">
+		<span class="iconfont icon-tubiaozhizuomoban-copy"></span><span class="menu-item-title">供应商管理</span>
+	</div>
+	<div id="menu1" class="menus-space">
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="账号管理">
+			<span class="iconfont icon-zhanghao"></span>账号管理
+		</div>
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="账号查询">
+			<span class="iconfont icon-xiayou-copy"></span>账号查询
+		</div>
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="接口管理">
+			<span class="iconfont icon-jiekouguanli"></span>接口管理
+		</div>
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="接口查询">
+			<span class="iconfont icon-xiayou-copy"></span>接口查询
+		</div>
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="账户管理">
+			<span class="iconfont icon-zhanghuguanli"></span>账户管理
+		</div>
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="账户查询">
+			<span class="iconfont icon-xiayou-copy"></span>账户查询
+		</div>
+	</div>
+	<div class="menu-item-1 has-collapse" data-click="collapse" data-target="#menu2" data-parent="#mainMenus">
+		<span class="iconfont icon-icon-test"></span><span class="menu-item-title">账单管理</span>
+	</div>
+	<div id="menu2" class="menus-space">
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="账单查询">
+			<span class="iconfont icon-xiayou-copy"></span>账单查询
+		</div>
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="账单核实">
+			<span class="iconfont icon-daiheshi"></span>账单核实
+		</div>
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="历史账单">
+			<span class="iconfont icon-lishi"></span>历史账单
+		</div>
+	</div>
+	<div class="menu-item-1 no-collapse" data-click="loadtab" data-url="views/view1.html" data-title="计价规则">
+		<span class="iconfont icon-guize"></span><span class="menu-item-title">计价规则</span>
+	</div>
+	<div class="menu-item-1 has-collapse" data-click="collapse" data-target="#menu4" data-parent="#mainMenus">
+		<span class="iconfont icon-chongzhi2"></span><span class="menu-item-title">充值体系</span>
+	</div>
+	<div id="menu4" class="menus-space">
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="充值操作">
+			<span class="iconfont icon-chongzhi1"></span>充值操作
+		</div>
+		<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="充值记录">
+			<span class="iconfont icon-chongzhi"></span>充值记录
+		</div>
+	</div>
+	<div class="menu-item-1 no-collapse" data-click="loadtab" data-url="views/view1.html" data-title="权限设置">
+		<span class="iconfont icon-quanxianshezhi"></span><span class="menu-item-title">权限设置</span>
+	</div>
+</div>
+<div class="main-container">
+	<div class="main-tabs no-select">
+		<div class="tab-item-space" id="tab-space"></div>
+	</div>
+	<div class="main-pages" id="main-pages"></div>
+</div>
+<!--描述：最后加载js，增加页面相应速度-->
+<script type='text/javascript' src='static/_public/jquery-2.1.1.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='static/_public/jquery.form.js' charset='utf-8'></script>
+<script type='text/javascript' src='static/_public/flatpickr.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='static/js/common.js' charset='utf-8'></script>
+<script type='text/javascript' src='static/js/base.js' charset='utf-8'></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+html,body {
+	font-size: 14px;
+	line-height: 1.42857143;
+	font-family: "微软雅黑";
+	min-width: 1000px;
+}
+.card-space {
+	display: block;
+	margin: 20px;
+	padding: 20px;
+	background-color: #FFFFFF;
+	border: solid 1px #d5dde0;
+	box-shadow: 0 4px 8px rgba(0,0,0,.1);
+	max-height: 400px;
+}
+.card-space .card-title {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+}
+.card-space .card-title:before {
+	content: '';
+	display: inline-block;
+	width: 2px;
+	height: 20px;
+	background-color: #00c2de;
+	vertical-align: -5px;
+	margin-right: 10px;
+}
+.card-space .card-container {
+	position: relative;
+	padding: 0 12px;
+}
+.card-space .search-item {
+	position: relative;
+	display: inline-block;
+	width: 24.99%;
+	height: 40px;
+	line-height: 40px;
+}
+.card-space .search-item .input-label {
+	display: inherit;
+	width: 80px;
+}
+.card-space .search-item .search-input {
+	display: inline-block;
+	padding: 0 10px;
+	width: 50%;
+	height: 30px;
+	line-height: 30px;
+	border: solid 1px #ccc;
+	outline: none;
+	transition: border-color ease-in-out .2s;
+	-wekit-transition: border-color ease-in-out .2s;
+}
+.card-space .search-item .search-input.active,.card-space .search-item .search-input:focus {
+	border-color: #00c2de;
+}

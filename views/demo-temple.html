@@ -1,0 +1,32 @@
+1.首页主页菜单
+<div class="menu-item-1 no-collapse" data-click="loadtab" data-url="views/view1.html" data-title="对账明细">
+	<span class="iconfont icon-duizhangmingxi"></span><span class="menu-item-title">对账明细</span>
+</div>
+<div class="menu-item-1 has-collapse" data-click="collapse" data-target="#menu1" data-parent="#mainMenus">
+	<span class="iconfont icon-tubiaozhizuomoban-copy"></span><span class="menu-item-title">供应商管理</span>
+</div>
+<div id="menu1" class="menus-space">
+	<div class="menu-item-2" data-click="loadtab" data-url="views/view1.html" data-title="账号管理">
+		<span class="iconfont icon-tubiaozhizuomoban-copy"></span>供应商分析1
+	</div>
+	<div class="menu-item-2 has-collapse" data-click="collapse" data-target="#menu1_1" data-parent="#menu1">
+		<span class="iconfont icon-tubiaozhizuomoban-copy"></span>供应商分析tab1
+	</div>
+	<div id="menu1_1" class="menus-space">
+		<div class="menu-item-3" data-click="loadtab" data-url="views/view1.html" data-title="供应商分析2">供应商分析2</div>
+		<div class="menu-item-3" data-click="loadtab" data-url="views/view1.html" data-title="供应商分析3">供应商分析3</div>
+	</div>
+</div>
+2.加载页面
+<p data-click="loadhtml" data-url="temple1.html">加载页面1</p>
+3.select 美化
+<input type="hidden" name="selectValue" value="中国" />
+<div class="dropdown">
+	<div class="dropdown-select">中国</div>
+	<ul class="dropdown-menu">
+		<li class="dropdown-item">中国</li>
+		<li class="dropdown-item">美国</li>
+		<li class="dropdown-item">俄罗斯</li>
+		<li class="dropdown-item">罗马尼亚</li>
+	</ul>
+</div>
